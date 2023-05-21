@@ -17,7 +17,7 @@ color_index = []
 
 while True:
     print(f'\nFails: ', end='')
-    for x in list_fails:                                                      # Print fails - red [*]
+    for x in list_fails:                                                      # Print fails - red [bad letter]
         print(f'[{Fore.RED}{x}{Fore.RESET}]', end='')
     for y in range(10 - fails):
         print(f'[{Fore.GREEN}*{Fore.RESET}]', end='')                           # Print chance - green [*]
@@ -54,7 +54,6 @@ while True:
             color_index.append(ind)
 
     else:
-        #print(f'Letter "{Fore.RED}{answer}{Fore.RESET}" is not in passwort')    # Comment if wrong answer
         fails += 1                                                              # Add 1 fail
         list_fails.append(answer)
 
